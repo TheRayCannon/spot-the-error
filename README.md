@@ -12,7 +12,7 @@ This function is supposed to accept a count, and for the numbers 1 up to and inc
 ```
 PROGRAM print_fizz_buzz_numbers
     SET count TO INPUT
-    SET fizz_buzz_numbers = []
+    SET fizz_buzz_numbers TO []
     SET fizz TO []
     SET buzz TO []
     SET number TO 1
@@ -33,7 +33,7 @@ PROGRAM print_fizz_buzz_numbers
             ADD number TO fizz_buzz_numbers
             OUTPUT fizz_buzz_numbers
         ELSE 
-            OUTPUT ocunt 
+            OUTPUT count 
      
 ```
 
