@@ -13,6 +13,8 @@ This function is supposed to accept a count, and for the numbers 1 up to and inc
 PROGRAM print_fizz_buzz_numbers
     SET count TO INPUT
     SET fizz_buzz_numbers = []
+    SET fizz TO []
+    SET buzz TO []
     SET number = 1
 
     WHILE number < count
@@ -21,15 +23,18 @@ PROGRAM print_fizz_buzz_numbers
         SET modulo5 TO number % 5
         SET is_divisible_by_5 TO modulo5 IS 0
 
-        IF is_divisible_by_3
+        IF is_divisible_by_3 
+            ADD number TO fizz
+            OUTPUT fizz
+       ELSE IF is_divisible_by_5
+            ADD number TO buzz
+            OUTPUT buzz
+        ELSE IF is_divisible_by_3 AND is_divisible_by_5
             ADD number TO fizz_buzz_numbers
-        IF is_divisible_by_5
-            ADD number TO fizz_buzz_numbers
-        IF is_divisible_by_3 AND is_divisible_by_5
-            ADD number TO fizz_buzz_numbers
-        ADD number to fizz_buzz_numbers
-
-        SET index TO index + 1
+            OUTPUT fizz_buzz_numbers
+        ELSE 
+            OUTPUT ocunt 
+     
 ```
 
 Use reflection techniques and sample data to discover them. **Don't try to run the code**. Edit the program above as minimally as possible to correct the errors you find.
