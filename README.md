@@ -15,7 +15,7 @@ PROGRAM print_fizz_buzz_numbers
     SET fizz_buzz_numbers = []
     SET fizz TO []
     SET buzz TO []
-    SET number = 1
+    SET number TO 1
 
     WHILE number < count
         SET modulo3 TO number % 3
