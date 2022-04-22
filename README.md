@@ -19,9 +19,9 @@ PROGRAM print_fizz_buzz_numbers
 
     WHILE number < count
         SET modulo3 TO number % 3
-        SET is_divisible_by_3 TO modulo3 IS 0
+        SET is_divisible_by_3 TO modulo3
         SET modulo5 TO number % 5
-        SET is_divisible_by_5 TO modulo5 IS 0
+        SET is_divisible_by_5 TO modulo5
 
         IF is_divisible_by_3 
             ADD number TO fizz
